@@ -1,0 +1,172 @@
+/* ═══════════════════════════════════════════
+   FOOTER / CONTACT
+═══════════════════════════════════════════ */
+footer {
+  background: var(--c-dark);
+  padding:    120px 40px 40px;
+  text-align: center;
+}
+
+footer h2 {
+  font-family:   'Bebas Neue';
+  font-size:     clamp(60px, 10vw, 180px);
+  line-height:   .9;
+  margin-bottom: 40px;
+}
+
+footer h2 em {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  color:       var(--c-peach);
+  font-weight: 400;
+}
+
+.footer-intro {
+  max-width:     600px;
+  margin:        0 auto 50px;
+  font-size:     15px;
+  line-height:   1.7;
+  opacity:       .85;
+}
+
+/* ── CONTACT FORM ── */
+.contact-form {
+  max-width:      600px;
+  margin:         0 auto 60px;
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+  text-align:     left;
+}
+
+.form-row {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background:  rgba(219,159,117,.05);
+  border:      1px solid rgba(219,159,117,.2);
+  color:       var(--c-cream);
+  padding:     16px 20px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size:   14px;
+  outline:     none;
+  transition:  border-color .3s, background .3s;
+  resize:      none;
+  width:       100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color:          rgba(245,232,216,.4);
+  letter-spacing: 1px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--c-peach);
+  background:   rgba(219,159,117,.1);
+}
+
+.contact-form button {
+  cursor:      pointer;
+  background:  transparent;
+  font-family: 'Inter', sans-serif;
+  margin-top:  8px;
+  align-self:  center;
+}
+
+/* ── SOCIAL LINKS ── */
+.social-links {
+  display:         flex;
+  justify-content: center;
+  gap:             20px;
+  flex-wrap:       wrap;
+  margin-top:      60px;
+  margin-bottom:   40px;
+}
+
+.social-links a {
+  display:       flex;
+  align-items:   center;
+  gap:           12px;
+  padding:       14px 24px;
+  background:    rgba(219,159,117,.05);
+  border:        1px solid rgba(219,159,117,.2);
+  border-radius: 50px;
+  color:         var(--c-cream);
+  text-decoration: none;
+  font-size:     13px;
+  letter-spacing: 1px;
+  transition:    background .4s, color .4s, transform .4s, border-color .4s;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background:   var(--c-peach);
+  color:        var(--c-brown);
+  transform:    translateY(-4px);
+  border-color: var(--c-peach);
+}
+
+.social-icon {
+  width:           32px;
+  height:          32px;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  background:      var(--c-peach);
+  color:           var(--c-brown);
+  border-radius:   50%;
+  font-weight:     700;
+  font-size:       14px;
+  transition:      background .4s, color .4s;
+  flex-shrink:     0;
+}
+
+.social-links a:hover .social-icon,
+.social-links a:focus-visible .social-icon {
+  background: var(--c-brown);
+  color:      var(--c-peach);
+}
+
+.social-label { font-weight: 500; }
+
+/* ── FOOTER BOTTOM ── */
+.foot-bot {
+  margin-top:      60px;
+  padding-top:     30px;
+  border-top:      1px solid rgba(219,159,117,.2);
+  display:         flex;
+  justify-content: space-between;
+  font-size:       11px;
+  letter-spacing:  2px;
+  text-transform:  uppercase;
+  opacity:         .6;
+  flex-wrap:       wrap;
+  gap:             20px;
+}
+
+/* CTA button (shared) */
+.cta-btn {
+  display:        inline-block;
+  padding:        20px 50px;
+  border:         1px solid var(--c-peach);
+  color:          var(--c-peach);
+  text-decoration: none;
+  font-size:      12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius:  50px;
+  transition:     background .4s, color .4s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus-visible {
+  background: var(--c-peach);
+  color:      var(--c-brown);
+}

@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════
+   SURVEY & RESEARCH
+═══════════════════════════════════════════ */
+.survey {
+  max-width: 1400px;
+  margin:    0 auto;
+}
+
+.survey h2 {
+  font-family:    'Bebas Neue';
+  font-size:      80px;
+  line-height:    .9;
+  margin-bottom:  20px;
+}
+
+.survey h2 em {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  color:       var(--c-peach);
+  font-weight: 400;
+}
+
+.survey-intro {
+  max-width:     700px;
+  font-size:     16px;
+  line-height:   1.8;
+  opacity:       .85;
+  margin-bottom: 60px;
+}
+
+/* ── STAT CARDS ── */
+.stat-cards {
+  display:               grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:                   16px;
+  margin-bottom:         60px;
+}
+
+.stat-card {
+  background:    rgba(219,159,117,.08);
+  border:        1px solid rgba(219,159,117,.2);
+  padding:       24px;
+  border-radius: 12px;
+  transition:    background .4s, transform .4s;
+}
+
+.stat-card:hover {
+  background: rgba(219,159,117,.15);
+  transform:  translateY(-4px);
+}
+
+.stat-card .val {
+  font-family: 'Bebas Neue';
+  font-size:   38px;
+  color:       var(--c-peach);
+  line-height: 1;
+}
+
+.stat-card .lbl {
+  font-size:      11px;
+  opacity:        .7;
+  margin-top:     6px;
+  letter-spacing: 1px;
+}
+
+/* ── SURVEY GRID ── */
+.survey-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   60px;
+  margin-top:            40px;
+}
+
+.survey-block h4 {
+  font-size:      11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color:          var(--c-peach);
+  margin-bottom:  20px;
+  padding-bottom: 12px;
+  border-bottom:  1px solid rgba(219,159,117,.2);
+}
+
+/* Demo grid */
+.demo-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   12px;
+  margin-bottom:         24px;
+}
+
+.demo-item {
+  background:   rgba(255,255,255,.03);
+  padding:      20px;
+  border-radius: 10px;
+  border-left:  2px solid var(--c-peach);
+}
+
+.demo-item strong {
+  font-family: 'Bebas Neue';
+  font-size:   32px;
+  display:     block;
+  color:       var(--c-cream);
+  line-height: 1;
+}
+
+.demo-item span {
+  font-size: 12px;
+  opacity:   .7;
+}
+
+/* ── BAR CHARTS ── */
+.bar-list {
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+}
+
+.bar-item {
+  display:               grid;
+  grid-template-columns: 180px 1fr 50px;
+  align-items:           center;
+  gap:                   16px;
+  font-size:             13px;
+}
+
+.bar-track {
+  height:        8px;
+  background:    rgba(255,255,255,.08);
+  border-radius: 4px;
+  overflow:      hidden;
+}
+
+/* ── KEY FIX: width-based animation via JS ── */
+.bar-fill {
+  height:        100%;
+  border-radius: 4px;
+  width:         0%;                                         /* starts at 0 */
+  transition:    width 1.2s cubic-bezier(.19, 1, .22, 1);   /* animates to data-width */
+}
+
+.bar-percent {
+  font-family: 'Bebas Neue';
+  font-size:   16px;
+  color:       var(--c-peach);
+  text-align:  right;
+}

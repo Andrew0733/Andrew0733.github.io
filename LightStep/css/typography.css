@@ -1,0 +1,88 @@
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY SECTION
+═══════════════════════════════════════════ */
+.typo {
+  background: var(--c-brown);
+  padding:    140px 40px;
+}
+
+.typo-inner {
+  max-width: 1400px;
+  margin:    0 auto;
+}
+
+.typo-inner .head { margin-bottom: 60px; }
+
+.typo-inner h2 {
+  font-family: 'Bebas Neue';
+  font-size:   70px;
+  line-height: .95;
+}
+
+.typo-inner h2 em {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  color:       var(--c-peach);
+  font-weight: 400;
+}
+
+.typo-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   60px;
+  margin-top:            60px;
+}
+
+.typo-card {
+  background:    rgba(245,232,216,.05);
+  border:        1px solid rgba(219,159,117,.15);
+  padding:       40px;
+  border-radius: 16px;
+}
+
+.typo-card .label {
+  font-size:      11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color:          var(--c-peach);
+  margin-bottom:  20px;
+}
+
+.typo-card .sample {
+  font-size:     56px;
+  line-height:   1;
+  margin-bottom: 16px;
+  color:         var(--c-cream);
+}
+
+.typo-card .meta {
+  font-size:      12px;
+  opacity:        .6;
+  letter-spacing: 1px;
+  margin-top:     24px;
+}
+
+/* Website fonts */
+.typo-card.web .sample   { font-family: 'Bebas Neue'; letter-spacing: 1px; }
+.typo-card.web .sample-2 {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  font-size:   40px;
+  color:       var(--c-peach);
+  margin-top:  16px;
+}
+
+/* App font */
+.typo-card.app .sample {
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: 700;
+}
+
+.typo-card.app .sample-2 {
+  font-family: 'M PLUS Rounded 1c';
+  font-weight: 400;
+  font-size:   20px;
+  margin-top:  20px;
+  color:       var(--c-cream);
+  opacity:     .8;
+}

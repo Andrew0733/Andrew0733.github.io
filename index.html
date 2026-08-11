@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrew Hany — UI/UX & Product Designer Portfolio</title>
+<meta name="description" content="Andrew Hany — UI/UX Designer, Product Designer, and AI-assisted design specialist. Crafting thoughtful digital experiences that solve real problems.">
+<meta property="og:title" content="Andrew Hany — Design Portfolio">
+<meta property="og:description" content="UI/UX & Product Designer crafting intuitive, impactful digital experiences.">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="shortcut icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+<!-- LOADING SCREEN -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-content">
+    <div class="loader-logo">
+      <img src="logo.png" alt="Loading">
+    </div>
+    <div class="loader-text">
+      <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+  </div>
+</div>
+
+<!-- باقي الكود -->
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a href="home.html" class="logo">
+    <img src="logo.png" alt="Andrew Hany Logo">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="navMenu">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO — POSTER STYLE -->
+<section class="hero">
+  <div class="hero-top">
+    <span class="hero-tag">Creative Portfolio</span>
+    <span class="hero-tag hero-tag-right"><span class="pulse"></span> Available for Work</span>
+  </div>
+
+  <div class="hero-main">
+    <h1 class="hero-title">
+      <span class="split">PORTF</span><span class="split">OLIO</span>
+    </h1>
+    <div class="hero-portrait">
+      <img src="andrew-hero.png" alt="Andrew Hany portrait">
+      <div class="portrait-circle"></div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="hero-left">
+      <div class="hero-services">
+        <span>UI / UX</span>
+        <span>PRODUCT</span>
+        <span>DESIGN</span>
+      </div>
+      <div class="hero-quote">
+        <div class="quote-mark">"</div>
+        <p>I design digital experiences that are intuitive, beautiful, and impactful.</p>
+        <div class="signature">Andrew Iskander</div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-name">
+        <div class="section-label">UI/UX & Product Designer</div>
+        <h2>ANDREW <em>Iskander.</em></h2>
+        <p class="hero-bio">A digital designer crafting clean, modern, and user-focused experiences. I help brands communicate, engage, and grow through thoughtful design solutions rooted in research and empathy.</p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-icon">✦</div>
+          <div class="hero-stat-num">5<span>+</span></div>
+          <div class="hero-stat-lbl">Years<br>Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon">◈</div>
+          <div class="hero-stat-num">30<span>+</span></div>
+          <div class="hero-stat-lbl">Projects<br>Completed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-icon">✧</div>
+          <div class="hero-stat-num">15<span>+</span></div>
+          <div class="hero-stat-lbl">Happy<br>Clients</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>UI/UX Design</span><span>Product Design</span><span>Brand Identity</span><span>Design Systems</span>
+    <span>UI/UX Design</span><span>Product Design</span><span>Brand Identity</span><span>Design Systems</span>
+    <span>UI/UX Design</span><span>Product Design</span><span>Brand Identity</span><span>Design Systems</span>
+    <span>UI/UX Design</span><span>Product Design</span><span>Brand Identity</span><span>Design Systems</span>
+  </div>
+</div>
+
+<!-- SERVICES / WHAT I DO -->
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <div class="section-label">What I Do</div>
+    <h2>Services that <em>solve problems.</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">⬚</div>
+      <h3>UI/UX Design</h3>
+      <p>Designing intuitive and engaging user experiences that drive results and delight users.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">◨</div>
+      <h3>Web Design</h3>
+      <p>Building modern, responsive, and high-performance websites that convert visitors.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">◈</div>
+      <h3>Product Design</h3>
+      <p>End-to-end product design from research and strategy to high-fidelity prototypes.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">▤</div>
+      <h3>Design Systems</h3>
+      <p>Building consistent design languages and reusable component libraries.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">✦</div>
+      <h3>Brand Identity</h3>
+      <p>Crafting visual identities that tell stories — from logo to full brand systems.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">◐</div>
+      <h3>AI-Assisted Design</h3>
+      <p>Leveraging AI tools to accelerate research, ideation, and design iteration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-header">
+    <div class="section-label reveal" style="justify-content:center">My Process</div>
+    <h2 class="reveal process-title">From idea <em>to impact.</em></h2>
+    <p class="reveal process-sub">Every project follows a proven design thinking process — grounded in research, refined through iteration, and delivered with care.</p>
+  </div>
+
+  <div class="process-timeline">
+    <div class="p-line" aria-hidden="true"></div>
+    <div class="p-step reveal">
+      <div class="p-step-num">01</div>
+      <div class="p-step-icon">◎</div>
+      <h4>Discover</h4>
+      <p>Understanding user needs, business goals, and project requirements through research.</p>
+    </div>
+    <div class="p-step reveal">
+      <div class="p-step-num">02</div>
+      <div class="p-step-icon">◈</div>
+      <h4>Define</h4>
+      <p>Synthesizing findings into clear problem statements and structured solution frameworks.</p>
+    </div>
+    <div class="p-step reveal">
+      <div class="p-step-num">03</div>
+      <div class="p-step-icon">✦</div>
+      <h4>Ideate</h4>
+      <p>Exploring multiple design directions through sketches, wireframes, and rapid iteration.</p>
+    </div>
+    <div class="p-step reveal">
+      <div class="p-step-num">04</div>
+      <div class="p-step-icon">◐</div>
+      <h4>Design</h4>
+      <p>Crafting clean, modern, user-centric interfaces with pixel-perfect attention to detail.</p>
+    </div>
+    <div class="p-step reveal">
+      <div class="p-step-num">05</div>
+      <div class="p-step-icon">✧</div>
+      <h4>Deliver</h4>
+      <p>Testing, refining, and delivering polished designs ready for development handoff.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section class="work" id="work">
+  <div class="work-header">
+    <div>
+      <div class="section-label reveal">Featured Work</div>
+      <h2 class="reveal work-title">Selected <em>projects.</em></h2>
+    </div>
+    <a href="https://www.behance.net/andrewhany6" target="_blank" rel="noopener" class="view-all reveal">
+      View All Projects →
+    </a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <a href="LightStep/LightStep.html" class="project-card reveal" data-project="1" >
+      <div class="project-image">
+        <img src="project-1.jpg" alt="Project 1 thumbnail" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-view">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-cat">UI/UX Design</span>
+        </div>
+        <h3>LightStep</h3>
+        <p>Anti-Gravity Treadmill App. | freelance project</p>
+      </div>
+    </a>
+
+    <!-- PROJECT 2 -->
+    <a href="Yaqiz/YaQiz.html" class="project-card reveal" data-project="2" >
+      <div class="project-image">
+        <img src="project-2.jpg" alt="Project 2 thumbnail" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-view">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-cat">Product Design</span>
+        </div>
+        <h3>YaQiz</h3>
+        <p>Driver Monitoring System. (UI/UX Design) </p>
+      </div>
+    </a>
+
+    <!-- PROJECT 3 -->
+    <a href="Rhythm/rhythm.html" class="project-card reveal" data-project="3" >
+      <div class="project-image">
+        <img src="project-3.jpg" alt="Project 3 thumbnail" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-view">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <span class="project-cat">UX Case Study</span>
+        </div>
+        <h3>Rhythm</h3>
+        <p> — Habit Tracker App. (UI/UX Design) </p>
+      </div>
+    </a>
+
+    <!-- PROJECT 4 -->
+    <a href="ads/ads.html" class="project-card reveal" data-project="4" >
+      <div class="project-image">
+        <img src="project-4.jpg" alt="Project 4 thumbnail" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-view">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <span class="project-cat">Graphic Design</span>
+        </div>
+        <h3>Social Media Ads</h3>
+        <p>Ads that stop the scroll.</p>
+      </div>
+    </a>
+
+    <!-- PROJECT 5 (Featured — spans full width) -->
+    <a href="ando/ando.html" class="project-card project-card-wide reveal" data-project="5" >
+      <div class="project-image">
+        <img src="project-5.jpg" alt="Project 5 thumbnail" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-view">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-meta">
+          <span class="project-num">05</span>
+          <span class="project-cat">Brand Identity</span>
+        </div>
+        <h3>A N D O</h3>
+        <p>Be Different. Be You. Be Bold.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-left reveal">
+      <div class="about-image">
+        <img src="andrew-about.jpg" alt="Andrew Hany portrait">
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="section-label">About Me</div>
+      <h2>Design with <em>purpose.</em></h2>
+      <p class="about-bio">I'm a UI/UX & Product Designer with a Computer Engineering background and a passion for minimal design, clean interfaces, and seamless experiences. I bridge the gap between design and development, ensuring every solution is both user-centered and technically feasible.</p>
+      <p class="about-bio">I believe great design is not just about how it looks, but how it works — and how it makes people feel.</p>
+
+      <div class="about-traits">
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>Detail oriented</span>
+        </div>
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>Problem solver</span>
+        </div>
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>Minimal & modern</span>
+        </div>
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>Always learning</span>
+        </div>
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>User-focused</span>
+        </div>
+        <div class="trait">
+          <span class="trait-dot"></span>
+          <span>Collaborative</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools">
+  <div class="tools-inner">
+    <div class="section-label reveal" style="justify-content:center">Tools I Use</div>
+    <h2 class="reveal tools-title">The design <em>stack.</em></h2>
+
+    <div class="tools-grid">
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#F24E1E">◆</div>
+        <span>Figma</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#FF61F6">Xd</div>
+        <span>Adobe XD</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#31A8FF">Ps</div>
+        <span>Photoshop</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#FF9A00">Ai</div>
+        <span>Illustrator</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#0ACF83">Fj</div>
+        <span>FigJam</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#FFD02F">Mr</div>
+        <span>Miro</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#0055FF">Fr</div>
+        <span>Framer</span>
+      </div>
+      <div class="tool-card reveal">
+        <div class="tool-icon" style="color:#DB9F75">Ai</div>
+        <span>AI Tools</span>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial reveal">
+      <div class="quote-large">"</div>
+      <p>Andrew brings rare balance of engineering precision and design empathy. He listens deeply, iterates fast, and delivers solutions that feel effortless — the kind of designer every team wishes they had.</p>
+      <div class="testimonial-author">
+        <div class="ta-avatar">✦</div>
+        <div>
+          <div class="ta-name">Client Feedback</div>
+          <div class="ta-role">Product Team Lead</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLABORATE / CONTACT -->
+<section class="collaborate" id="contact">
+  <div class="collab-header reveal">
+    <div class="section-label" style="justify-content:center">Let's Collaborate</div>
+    <h2>Have a project <em>in mind?</em></h2>
+    <p>I'd love to hear about it. Whether it's a full product design, a brand refresh, or just a chat about design — let's connect.</p>
+  </div>
+
+  <div class="collab-grid">
+    <div class="collab-form-wrap reveal">
+      <form class="contact-form" action="https://formsubmit.co/andrewiskander1@outlook.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from Portfolio Home page!">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div>
+            <label for="name" class="sr-only">Your Name</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div>
+            <label for="email" class="sr-only">Your Email</label>
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <label for="subject" class="sr-only">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Project Type or Subject">
+        <label for="message" class="sr-only">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+        <button type="submit" class="cta-btn">Send Message →</button>
+      </form>
+    </div>
+
+    <div class="collab-qr reveal">
+      <div class="qr-title">Scan to Connect</div>
+      <div class="qr-grid">
+        <div class="qr-item">
+          <img src="qr-linkedin.png" alt="LinkedIn QR Code">
+          <span>LinkedIn</span>
+        </div>
+        <div class="qr-item">
+          <img src="qr-behance.png" alt="Behance QR Code">
+          <span>Behance</span>
+        </div>
+      </div>
+      <div class="qr-tagline">
+        <p>Designing<br><em>experiences.</em></p>
+        <p>Building<br><em>connections.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="collab-info reveal">
+    <a href="mailto:andrewiskander1@outlook.com" class="ci-item">
+      <span class="ci-icon">@</span>
+      <span>andrewiskander1@outlook.com</span>
+    </a>
+    <a href="tel:+201147412021" class="ci-item">
+      <span class="ci-icon">☏</span>
+      <span>+20 114 741 2021</span>
+    </a>
+    <div class="ci-item">
+      <span class="ci-icon">◉</span>
+      <span>Cairo, Egypt</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Andrew Hany Logo">
+      <h3>ANDREW <em>Hany.</em></h3>
+      <p>UI/UX & Product Designer crafting thoughtful digital experiences.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <h4>Follow</h4>
+      <a href="https://www.behance.net/andrewhany6" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.linkedin.com/in/andrew-hany-iskander0212" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:andrewiskander1@outlook.com">Email</a>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span>© 2025 ANDREW HANY</span>
+    <span>DESIGNED WITH INTENTION</span>
+    <span>PORTFOLIO · 2025</span>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="home.js"></script>
+
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+  ↑
+</button>
+
+</body>
+</html>

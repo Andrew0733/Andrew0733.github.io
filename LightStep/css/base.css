@@ -1,0 +1,77 @@
+/* ═══════════════════════════════════════════
+   BASE — tokens, reset, global
+═══════════════════════════════════════════ */
+:root {
+  /* Website palette (warm) */
+  --c-dark:   #122324;
+  --c-forest: #2F3A32;
+  --c-sage:   #545748;
+  --c-peach:  #DB9F75;
+  --c-rust:   #804012;
+  --c-brown:  #3E2411;
+  --c-cream:  #f5e8d8;
+
+  /* App palette (blue) */
+  --app-primary:   #0264B0;
+  --app-dark:      #012A4A;
+  --app-secondary: #014F86;
+  --app-neutral:   #0C0C20;
+  --app-white:     #ffffff;
+
+  /* Spacing */
+  --section-pad: 120px 40px;
+}
+
+*,
+*::before,
+*::after {
+  margin:     0;
+  padding:    0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background:   var(--c-dark);
+  color:        var(--c-cream);
+  font-family:  'Inter', sans-serif;
+  overflow-x:   hidden;
+}
+
+/* Smooth scroll — respect user motion preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+::selection {
+  background: var(--c-peach);
+  color:      var(--c-brown);
+}
+
+img {
+  max-width:   100%;
+  height:      auto;
+  display:     block;
+}
+
+/* Utility */
+.mt-32 { margin-top: 32px; }
+.mt-40 { margin-top: 40px; }
+
+.section-label {
+  font-size:      11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color:          var(--c-peach);
+  margin-bottom:  20px;
+  display:        flex;
+  align-items:    center;
+  gap:            12px;
+}
+.section-label::before {
+  content:    "";
+  width:      40px;
+  height:     1px;
+  background: var(--c-peach);
+  flex-shrink: 0;
+}

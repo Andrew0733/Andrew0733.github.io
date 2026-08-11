@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHYTHM — Habit Tracker App Case Study | Andrew Samer</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="shortcut icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+  <meta name="description" content="RHYTHM — a social habit-tracking and wellness app case study by Andrew Samer. Habits, health, tasks, and peer motivation — all in one place.">
+  <meta property="og:title" content="RHYTHM — Habit Tracker App Case Study">
+  <meta property="og:description" content="A unified wellness app combining habits, health, tasks, and social motivation.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Changa:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rhythm.css">
+</head>
+
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <a href="../index.html" class="logo">
+      <img src="logo.png" alt="Andrew Hany Logo">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#flow">User Flow</a></li>
+      <li><a href="#screens">Screens</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span>Case Study 003</span>
+      <span>Wellness · Habit Tracking</span>
+    </div>
+    <h1><span class="split">RHY</span><span class="italic split">thm</span></h1>
+    <div class="hero-sub reveal">
+      <p class="desc">A social habit-tracking and wellness app that brings together daily routines, health monitoring, task management, and peer motivation — all in one unified experience designed for people who want to actually show up every day.</p>
+      <div class="hero-tags">
+        <span>UI / UX Design</span>
+        <span>Wellness App</span>
+        <span>Social Motivation</span>
+        <span>Figma · Illustrator</span>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Habits · Health · Tasks</span><span>Social Motivation</span><span>Streaks & Milestones</span><span>Your Daily Rhythm</span>
+      <span>Habits · Health · Tasks</span><span>Social Motivation</span><span>Streaks & Milestones</span><span>Your Daily Rhythm</span>
+      <span>Habits · Health · Tasks</span><span>Social Motivation</span><span>Streaks & Milestones</span><span>Your Daily Rhythm</span>
+      <span>Habits · Health · Tasks</span><span>Social Motivation</span><span>Streaks & Milestones</span><span>Your Daily Rhythm</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="left reveal">
+      <div class="section-label">About Project</div>
+      <h2>One app <em>for every</em> rhythm.</h2>
+      <div class="app-icon-wrap">
+        <img src="rhythm-icon.png" alt="Rhythm App Icon" class="app-icon">
+        <div class="app-icon-info">
+          <span class="app-icon-name">RHYTHM</span>
+          <span class="app-icon-sub">Habit Tracker & Wellness</span>
+        </div>
+      </div>
+    </div>
+    <div class="right reveal">
+      <p>Rhythm is a unified platform where users can track habits, monitor health, manage daily tasks, and stay motivated — together with friends. Instead of switching between four different apps, users get one streamlined experience that keeps everything connected.</p>
+      <p>A built-in social layer lets friends share progress, celebrate wins, and hold each other accountable — turning a lonely solo routine into a shared journey worth showing up for.</p>
+
+      <!-- KEY FEATURES -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔥</div>
+          <h4>Streak Tracking</h4>
+          <p>Every streak celebrated. Every milestone earned. Gentle nudges keep you from breaking the chain.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">👥</div>
+          <h4>Social Motivation</h4>
+          <p>Cheer on friends, share wins, and stay accountable together — no ads, no noise, just the people who matter.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h4>All-in-One Dashboard</h4>
+          <p>Habits, health, and tasks in one glance — no more switching between four different apps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND IDENTITY -->
+  <section class="brand">
+    <div class="section-label reveal" style="justify-content:center">Brand Identity</div>
+    <h2 class="reveal">A single rhythm that syncs your habits, health, and <span class="highlight">the people who matter.</span></h2>
+    <p class="reveal">Rhythm's identity is built on warmth and clarity — a modern teal paired with an energetic orange accent that celebrates progress. The Changa typeface brings a friendly, human tone that makes wellness feel approachable, not clinical. Every design decision reinforces one idea: consistency, made simple.</p>
+  </section>
+
+  <!-- SURVEY & RESEARCH -->
+  <section class="survey" id="research">
+    <div class="section-label reveal">Survey & Research</div>
+    <h2 class="reveal">Listening <em>first.</em><br>Building second.</h2>
+    <p class="survey-intro reveal">A deep-dive survey with 50 active habit-tracking users revealed a broken market — fragmented tools, disengaged users, and unmet needs. Every design decision in Rhythm is grounded in what those users actually asked for.</p>
+
+    <div class="stat-cards">
+      <div class="stat-card reveal"><div class="val">50</div><div class="lbl">Respondents</div></div>
+      <div class="stat-card reveal"><div class="val">80%</div><div class="lbl">Use 3+ Apps Daily</div></div>
+      <div class="stat-card reveal"><div class="val">78%</div><div class="lbl">Feel Bored</div></div>
+      <div class="stat-card reveal"><div class="val">86%</div><div class="lbl">Want One App</div></div>
+      <div class="stat-card reveal"><div class="val">72%</div><div class="lbl">Want Social Layer</div></div>
+    </div>
+
+    <div class="survey-grid">
+      <div class="survey-block reveal">
+        <h4>Problem Validation</h4>
+        <div class="demo-grid">
+          <div class="demo-item"><strong>80%</strong><span>Juggle 3 or more apps daily</span></div>
+          <div class="demo-item"><strong>78%</strong><span>Feel bored with current tools</span></div>
+          <div class="demo-item"><strong>80%</strong><span>Struggle or feel inconvenienced</span></div>
+          <div class="demo-item"><strong>3.4</strong><span>Average apps used per day</span></div>
+        </div>
+
+        <h4 class="mt-32">Market Demand</h4>
+        <div class="demo-grid">
+          <div class="demo-item"><strong>52%</strong><span>Would definitely use a combined app</span></div>
+          <div class="demo-item"><strong>34%</strong><span>Would probably use it</span></div>
+          <div class="demo-item"><strong>40%</strong><span>Say social features are very motivating</span></div>
+        </div>
+      </div>
+
+      <div class="survey-block reveal">
+        <h4>Apps Used Daily</h4>
+        <div class="bar-list">
+          <div class="bar-item" data-percent="6"><span>1 app</span><div class="bar-track"><div class="bar-fill-anim" style="background:#DB9F75"></div></div><span class="bar-percent">6%</span></div>
+          <div class="bar-item" data-percent="18"><span>2 apps</span><div class="bar-track"><div class="bar-fill-anim" style="background:#DB9F75"></div></div><span class="bar-percent">18%</span></div>
+          <div class="bar-item" data-percent="32"><span>3 apps</span><div class="bar-track"><div class="bar-fill-anim" style="background:#DB9F75"></div></div><span class="bar-percent">32%</span></div>
+          <div class="bar-item" data-percent="28"><span>4 apps</span><div class="bar-track"><div class="bar-fill-anim" style="background:#804012"></div></div><span class="bar-percent">28%</span></div>
+          <div class="bar-item" data-percent="16"><span>5+ apps</span><div class="bar-track"><div class="bar-fill-anim" style="background:#804012"></div></div><span class="bar-percent">16%</span></div>
+        </div>
+
+        <h4 class="mt-40">Boredom with Current Apps</h4>
+        <div class="bar-list">
+          <div class="bar-item" data-percent="34"><span>Always bored</span><div class="bar-track"><div class="bar-fill-anim" style="background:#DB9F75"></div></div><span class="bar-percent">34%</span></div>
+          <div class="bar-item" data-percent="44"><span>Sometimes bored</span><div class="bar-track"><div class="bar-fill-anim" style="background:#DB9F75"></div></div><span class="bar-percent">44%</span></div>
+          <div class="bar-item" data-percent="14"><span>Rarely bored</span><div class="bar-track"><div class="bar-fill-anim" style="background:#a3826a"></div></div><span class="bar-percent">14%</span></div>
+          <div class="bar-item" data-percent="8"><span>Never bored</span><div class="bar-track"><div class="bar-fill-anim" style="background:#a3826a"></div></div><span class="bar-percent">8%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY INSIGHTS -->
+  <section class="insights">
+    <div class="insights-inner">
+      <div class="section-label reveal">Key Insights</div>
+      <h2 class="reveal">What the data <em>told us.</em></h2>
+
+      <div class="insight-cards">
+        <div class="insight-card">
+          <div class="insight-num" aria-hidden="true">01</div>
+          <h4>App Fatigue Is Real</h4>
+          <div class="insight-stats">
+            <div class="insight-stat"><span class="i-val">80%</span><span class="i-lbl">Use 3 or more apps every single day</span></div>
+            <div class="insight-stat"><span class="i-val">78%</span><span class="i-lbl">Feel bored or disengaged with current tools</span></div>
+            <div class="insight-stat"><span class="i-val">3.4</span><span class="i-lbl">Average number of apps used daily</span></div>
+          </div>
+          <p>Users aren't quitting habits because they lack willpower — they're quitting because switching between four apps kills momentum. Rhythm consolidates everything into one.</p>
+        </div>
+
+        <div class="insight-card">
+          <div class="insight-num" aria-hidden="true">02</div>
+          <h4>Demand Is Overwhelming</h4>
+          <div class="insight-stats">
+            <div class="insight-stat"><span class="i-val">86%</span><span class="i-lbl">Would definitely or probably use one combined app</span></div>
+            <div class="insight-stat"><span class="i-val">52%</span><span class="i-lbl">Said "definitely" — no hesitation</span></div>
+            <div class="insight-stat"><span class="i-val">80%</span><span class="i-lbl">Describe current experience as struggle</span></div>
+          </div>
+          <p>The market isn't just open — it's actively asking. Rhythm meets a validated demand with a solution users have already imagined.</p>
+        </div>
+
+        <div class="insight-card">
+          <div class="insight-num" aria-hidden="true">03</div>
+          <h4>People Beat Features</h4>
+          <div class="insight-stats">
+            <div class="insight-stat"><span class="i-val">72%</span><span class="i-lbl">Say connecting with friends would motivate them</span></div>
+            <div class="insight-stat"><span class="i-val">40%</span><span class="i-lbl">Find social features "very motivating"</span></div>
+            <div class="insight-stat"><span class="i-val">#1</span><span class="i-lbl">Requested feature: friends & accountability</span></div>
+          </div>
+          <p>Users don't want more data — they want each other. Rhythm's social layer turns solo tracking into shared momentum that keeps people coming back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- USER FLOW -->
+<section class="userflow" id="flow">
+  <div class="uf-header">
+    <div class="section-label reveal" style="justify-content:center">User Flow</div>
+    <h2 class="reveal">From tap <em>to streak.</em></h2>
+    <p class="reveal">A complete map of every path through Rhythm — from opening the app to adding habits, logging progress, unlocking milestones, and sharing wins with the community.</p>
+  </div>
+
+  <!-- Main path -->
+  <div class="flow-main reveal">
+    <div class="flow-main-title">Main Path</div>
+    <div class="flow-main-steps">
+      <div class="main-step">
+        <div class="main-icon orange">📱</div>
+        <span class="main-label">Open Rhythm</span>
+      </div>
+      <span class="main-arrow">→</span>
+      <div class="main-step">
+        <div class="main-icon dark">🏠</div>
+        <span class="main-label">Home Dashboard</span>
+      </div>
+      <span class="main-arrow">→</span>
+      <div class="main-step">
+        <div class="main-icon dark">✅</div>
+        <span class="main-label">Tap Habits Tab</span>
+      </div>
+      <span class="main-arrow">→</span>
+      <div class="main-step">
+        <div class="main-icon teal">📋</div>
+        <span class="main-label">Habits Overview</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branches -->
+  <div class="flow-branches">
+
+    <!-- Branch 1: Add New Habit -->
+    <div class="flow-branch reveal">
+      <div class="branch-header">
+        <span class="branch-num">01</span>
+        <h4>Add New Habit</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">Enter Habit Name</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Choose Category</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Set Frequency</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Set Reminder</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Choose Icon</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-diamond">Share?</div>
+        <div class="b-split">
+          <div class="b-col">
+            <span class="b-label b-green">Yes</span>
+            <div class="b-step">Select Friend</div>
+            <div class="b-arrow">↓</div>
+            <div class="b-step success">Habit Saved</div>
+          </div>
+          <div class="b-col">
+            <span class="b-label">No</span>
+            <div class="b-step success">Habit Saved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branch 2: Edit Habit -->
+    <div class="flow-branch reveal">
+      <div class="branch-header">
+        <span class="branch-num">02</span>
+        <h4>Edit Habit</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">Habit Detail View</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Edit Habit</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Edit Name / Category</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step success">Save Changes</div>
+      </div>
+    </div>
+
+    <!-- Branch 3: View History -->
+    <div class="flow-branch reveal">
+      <div class="branch-header">
+        <span class="branch-num">03</span>
+        <h4>View History</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">Habit Detail View</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">View History & Analytics</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Weekly / Monthly View</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step success">Best Streak Analytics</div>
+      </div>
+    </div>
+
+    <!-- Branch 4: Log Today (WIDE) -->
+    <div class="flow-branch flow-branch-wide reveal">
+      <div class="branch-header">
+        <span class="branch-num">04</span>
+        <h4>Log Today's Entry</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">Habit Detail View</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-diamond">Done?</div>
+        <div class="b-three-split">
+          <div class="b-col">
+            <span class="b-label b-red">Skip</span>
+            <div class="b-step">Skip with Reason</div>
+            <div class="b-arrow">↓</div>
+            <div class="b-step warning">Streak Paused</div>
+          </div>
+          <div class="b-col">
+            <span class="b-label b-orange">Partial</span>
+            <div class="b-step">Log Partial Progress</div>
+            <div class="b-arrow">↓</div>
+            <div class="b-step success">Streak +1 Updated</div>
+          </div>
+          <div class="b-col">
+            <span class="b-label b-green">Complete</span>
+            <div class="b-step">Mark as Done</div>
+            <div class="b-arrow">↓</div>
+            <div class="b-step success">Streak +1 Updated</div>
+          </div>
+        </div>
+        <div class="b-arrow">↓</div>
+        <div class="b-diamond">Milestone?</div>
+        <div class="b-split">
+          <div class="b-col">
+            <span class="b-label b-green">Yes</span>
+            <div class="b-step badge">Badge Unlocked</div>
+            <div class="b-arrow">↓</div>
+            <div class="b-step success">+XP Points Added</div>
+          </div>
+          <div class="b-col">
+            <span class="b-label">No</span>
+            <div class="b-step success">+XP Points Added</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branch 5: Social -->
+    <div class="flow-branch reveal">
+      <div class="branch-header">
+        <span class="branch-num">05</span>
+        <h4>Social & Leaderboard</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">View All Streaks</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step orange-step">Streak Leaderboard</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step">Tap Friend Row</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step success">Send Cheer or Comment</div>
+      </div>
+    </div>
+
+    <!-- Branch 6: Delete -->
+    <div class="flow-branch reveal">
+      <div class="branch-header">
+        <span class="branch-num">06</span>
+        <h4>Delete Habit</h4>
+      </div>
+      <div class="branch-steps">
+        <div class="b-step">Habit Detail View</div>
+        <div class="b-arrow">↓</div>
+        <div class="b-step danger">Delete Habit</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- APP SCREENS -->
+  <section class="screens" id="screens">
+    <div class="section-label reveal" style="justify-content:center">App Screens Showcase</div>
+    <h2 class="reveal">A journey worth <em>showing up for.</em></h2>
+    <p class="reveal">From onboarding to daily dashboard, habits, tasks, social feed, health metrics, and personal insights — every screen is designed to feel effortless.</p>
+
+    <div class="app-gallery">
+      <div class="gallery-item reveal">
+        <div class="gallery-tag">01 · Onboarding & Sign Up</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-1.png" alt="Rhythm Onboarding - Welcome, Login, Sign Up, First Habit Setup" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Find Your Rhythm</h3>
+          <p>A warm welcome flow that gets users tracking their first habit in under 60 seconds. Curated categories, quick priority selection, and instant customization.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reverse">
+        <div class="gallery-tag">02 · Home & Daily Habits</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-2.png" alt="Rhythm Home Dashboard - Today's Habits, Streaks, Upcoming Tasks" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Home Dashboard</h3>
+          <p>Everything at a glance — active habits, today's tasks, current streaks, and friends' activity. A progress ring shows how much of today is already done.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-tag">03 · Focus Hub & Tasks</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-3.png" alt="Rhythm Focus Hub - Daily Tasks, Long-term Missions, Priority Tags" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Focus Hub</h3>
+          <p>The to-do list, reimagined. Priority tags, gentle overdue surfacing, and long-term missions — all distraction-free and seamlessly integrated.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reverse">
+        <div class="gallery-tag">04 · Social & Community</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-4.png" alt="Rhythm Social - Community Feed, Messages, Leaderboard, Friend Cheers" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Community & Cheers</h3>
+          <p>Live feed of friends' check-ins, streak milestones, and health wins. React, cheer, or drop a comment — no ads, just the people who matter.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-tag">05 · Health & Activity</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-5.png" alt="Rhythm Health - Live BPM, Steps, Sleep, Recovery Score, Weekly Trends" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Health Activity</h3>
+          <p>Steps, sleep, heart rate, calories, and recovery — all in one place. Color-coded metrics, weekly trends, and gentle nudges when something needs attention.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reverse">
+        <div class="gallery-tag">06 · Insights & Achievements</div>
+        <div class="gallery-frame">
+          <img src="rhythm-screens-6.png" alt="Rhythm Insights - Streaks, Badges, Smart Insights, Activity Map" loading="lazy">
+        </div>
+        <div class="gallery-caption">
+          <h3>Insights & Badges</h3>
+          <p>Smart patterns you'd never notice on your own. Milestone projections, activity heatmaps, and earned achievements that make consistency feel rewarding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section class="components">
+    <div class="components-inner">
+      <div class="section-label reveal" style="justify-content:center">Component System</div>
+      <h2 class="reveal">Built with <em>intention.</em></h2>
+      <p class="comp-desc reveal">Reusable UI components designed for the Rhythm experience — clean, friendly, and optimized for quick daily interactions.</p>
+
+      <div class="comp-grid">
+        <!-- Streak Counter -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Streak Counter</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-streak">
+              <div class="streak-fire">🔥</div>
+              <div class="streak-num">42</div>
+              <div class="streak-lbl">Day Streak</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habit Check -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Habit Row</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-habit-row">
+              <div class="habit-check">✓</div>
+              <div class="habit-text">
+                <div class="habit-name">Morning Meditation</div>
+                <div class="habit-sub">24 day streak</div>
+              </div>
+              <div class="habit-badge">Done</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Ring -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Progress Ring</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-progress-ring">
+              <svg viewBox="0 0 100 100" class="ring-svg">
+                <circle cx="50" cy="50" r="42" class="ring-bg"/>
+                <circle cx="50" cy="50" r="42" class="ring-fill" stroke-dasharray="264" stroke-dashoffset="66"/>
+              </svg>
+              <div class="ring-center">
+                <div class="ring-num">75%</div>
+                <div class="ring-lbl">Done</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task Item -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Task Item</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-task">
+              <div class="task-checkbox"></div>
+              <div class="task-content">
+                <div class="task-name">Complete case study task</div>
+                <div class="task-meta">10:30 AM · Office</div>
+              </div>
+              <span class="task-priority high">High</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friend Activity -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Friend Activity</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-friend">
+              <div class="friend-avatar">MC</div>
+              <div class="friend-text">
+                <div class="friend-name">Marcus Chen</div>
+                <div class="friend-action">Hit a 50-day streak!</div>
+              </div>
+              <button class="friend-cheer">👏</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Achievement Badge</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-badge">
+              <div class="badge-icon">🏆</div>
+              <div class="badge-info">
+                <div class="badge-title">Consistency King</div>
+                <div class="badge-sub">MAX Level Unlocked</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health Metric -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Health Metric</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-metric">
+              <div class="metric-label">Live Heart Rate</div>
+              <div class="metric-value"><span class="mv-num">73</span><span class="mv-unit">BPM</span></div>
+              <div class="metric-trend">↑ +5% vs yesterday</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Leaderboard Row</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-leader">
+              <div class="leader-rank">1</div>
+              <div class="leader-avatar">AC</div>
+              <div class="leader-name">Andrew C.</div>
+              <div class="leader-pts">1,420 <span>pts</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alert Card -->
+        <div class="comp-card">
+          <div class="comp-card-header">
+            <div class="comp-dot"></div>
+            <span>Smart Alert</span>
+          </div>
+          <div class="comp-preview">
+            <div class="r-alert">
+              <div class="alert-tag">Reminder</div>
+              <div class="alert-msg">Time for your Evening Meditation — wind down with 10 minutes.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALETTE -->
+  <section class="palettes-wrap">
+    <div class="palettes-inner">
+      <div class="head">
+        <div class="section-label reveal" style="justify-content:center">Color System</div>
+        <h2 class="reveal">Calm, warm, <em>alive.</em></h2>
+      </div>
+
+      <div class="palette-block reveal">
+        <h3>Primary Palette</h3>
+        <p class="desc">Rhythm's core palette blends grounded slate with a fresh teal and an energetic orange — approachable, modern, and instantly recognizable.</p>
+        <div class="palette-row">
+          <div class="swatch" style="background:#303841;color:#F5F5F5"><strong>#303841</strong><small>Dark Slate</small></div>
+          <div class="swatch" style="background:#76ABAE;color:#252B32"><strong>#76ABAE</strong><small>Teal</small></div>
+          <div class="swatch" style="background:#FF5722;color:#fff"><strong>#FF5722</strong><small>Orange</small></div>
+          <div class="swatch" style="background:#F5F5F5;color:#303841"><strong>#F5F5F5</strong><small>Off-White</small></div>
+        </div>
+      </div>
+
+      <div class="palette-block reveal">
+        <h3>Secondary & Neutral</h3>
+        <p class="desc">Status colors for success and error states, plus neutrals for structure and hierarchy.</p>
+        <div class="palette-row">
+          <div class="swatch" style="background:#00A36C;color:#fff"><strong>#00A36C</strong><small>Success Green</small></div>
+          <div class="swatch" style="background:#BA1A1A;color:#fff"><strong>#BA1A1A</strong><small>Error Red</small></div>
+          <div class="swatch" style="background:#252B32;color:#F5F5F5"><strong>#252B32</strong><small>Near Black</small></div>
+          <div class="swatch" style="background:#FFFFFF;color:#252B32"><strong>#FFFFFF</strong><small>Pure White</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="typo">
+    <div class="typo-inner">
+      <div class="head reveal">
+        <div class="section-label">Typography</div>
+        <h2>Warm, friendly, <em>human.</em></h2>
+      </div>
+      <div class="typo-grid">
+        <div class="typo-card web reveal">
+          <div class="label">Website · Editorial</div>
+          <div class="sample">BEBAS NEUE</div>
+          <div class="sample sample-2">Playfair Display</div>
+          <div class="meta mt-24">Bold display + elegant italic serif — shared portfolio identity</div>
+        </div>
+        <div class="typo-card app reveal">
+          <div class="label">App · Changa</div>
+          <div class="sample">Changa Bold</div>
+          <div class="sample sample-2">Approachable · Human · Warm</div>
+          <div class="meta mt-24">Modern rounded sans — feels friendly, not clinical</div>
+        </div>
+      </div>
+
+      <table class="type-scale reveal">
+        <thead>
+          <tr>
+            <th>Style</th>
+            <th>Sample</th>
+            <th>Specs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="scale-name">Large Display</td>
+            <td class="scale-sample" style="font-size:32px;font-weight:700">Good Morning, Alex!</td>
+            <td class="scale-meta">35px · Bold</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Display</td>
+            <td class="scale-sample" style="font-size:28px;font-weight:700">Find Your Rhythm</td>
+            <td class="scale-meta">32px · Bold</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Title 1</td>
+            <td class="scale-sample" style="font-size:22px;font-weight:500">Today's Habits</td>
+            <td class="scale-meta">25px · Medium</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Title 2</td>
+            <td class="scale-sample" style="font-size:20px;font-weight:400">Morning Meditation</td>
+            <td class="scale-meta">22px · Regular</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Title 3</td>
+            <td class="scale-sample" style="font-size:18px;font-weight:500">Weekly Progress</td>
+            <td class="scale-meta">20px · Regular</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Button</td>
+            <td class="scale-sample" style="font-size:15px;font-weight:400">Let's Gooo</td>
+            <td class="scale-meta">16px · Regular</td>
+          </tr>
+          <tr>
+            <td class="scale-name">Small</td>
+            <td class="scale-sample" style="font-size:12px;font-weight:400">12 Day Streak</td>
+            <td class="scale-meta">12px · Regular</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="outcome">
+    <div class="section-label reveal" style="justify-content:center;color:var(--c-brown)">The Result</div>
+    <h2 class="reveal">Driven by <em>consistency.</em></h2>
+    <p class="reveal">Rhythm turns fragmented daily rituals into one connected, motivating experience. By combining habits, health, tasks, and social accountability, it gives users a reason to show up every single day — and the tools to actually stay consistent.</p>
+
+    <div class="outcome-stats reveal">
+      <div class="outcome-stat">
+        <div class="num">40+</div>
+        <div class="lbl">Unique Screens</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="num">9</div>
+        <div class="lbl">Component Types</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="num">6</div>
+        <div class="lbl">Core Modules</div>
+      </div>
+      <div class="outcome-stat">
+        <div class="num">50</div>
+        <div class="lbl">Survey Respondents</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="section-label reveal" style="justify-content:center">Get in Touch</div>
+    <h2 class="reveal">LET'S <em>connect.</em></h2>
+    <p class="footer-intro">Have a project in mind or want to collaborate? Send me a message directly and I'll get back to you soon.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/andrewiskander1@outlook.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from RHYTHM case study!">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-row">
+        <div>
+          <label for="name" class="sr-only">Your Name</label>
+          <input id="name" type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div>
+          <label for="email" class="sr-only">Your Email</label>
+          <input id="email" type="email" name="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <label for="message" class="sr-only">Your Message</label>
+      <textarea id="message" name="message" placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit" class="cta-btn">Send Message →</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://www.behance.net/andrewhany6" target="_blank" rel="noopener">
+        <span class="social-icon">Be</span>
+        <span class="social-label">Behance</span>
+      </a>
+      <a href="https://www.linkedin.com/in/andrew-hany-iskander0212" target="_blank" rel="noopener">
+        <span class="social-icon">in</span>
+        <span class="social-label">LinkedIn</span>
+      </a>
+      <a href="tel:+201147412021">
+        <span class="social-icon">☏</span>
+        <span class="social-label">+20 114 741 2021</span>
+      </a>
+      <a href="mailto:andrewiskander1@outlook.com">
+        <span class="social-icon">@</span>
+        <span class="social-label">andrewiskander1@outlook.com</span>
+      </a>
+    </div>
+
+    <div class="foot-bot">
+      <span>© 2025 ANDREW HANY</span>
+      <span>DESIGNED WITH INTENTION</span>
+      <span>PORTFOLIO · 2025</span>
+    </div>
+  </footer>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="rhythm.js"></script>
+</body>
+</html>

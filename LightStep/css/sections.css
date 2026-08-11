@@ -1,0 +1,144 @@
+/* ═══════════════════════════════════════════
+   ABOUT / BRAND / OUTCOME
+═══════════════════════════════════════════ */
+
+/* Generic section padding */
+section {
+  padding:  var(--section-pad);
+  position: relative;
+}
+
+/* ── ABOUT ── */
+.about {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   80px;
+  max-width:             1400px;
+  margin:                0 auto;
+  align-items:           center;
+}
+
+.about-heading {
+  font-family:    'Bebas Neue';
+  font-size:      80px;
+  line-height:    .95;
+  letter-spacing: -1px;
+  margin-bottom:  30px;
+}
+
+.about-heading em {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  color:       var(--c-peach);
+  font-weight: 400;
+}
+
+.about-right p {
+  font-size:    16px;
+  line-height:  1.8;
+  opacity:      .9;
+  margin-bottom: 20px;
+}
+
+.about-visual {
+  aspect-ratio: 1;
+  background:   linear-gradient(135deg, var(--c-brown), var(--c-rust));
+  border-radius: 24px;
+  position:     relative;
+  overflow:     hidden;
+  display:      flex;
+  align-items:  center;
+  justify-content: center;
+  margin-top:   40px;
+}
+
+.about-visual::before {
+  content:    "";
+  position:   absolute;
+  inset:      0;
+  background: radial-gradient(circle at 30% 30%, rgba(219,159,117,.4), transparent 60%);
+}
+
+/* FIND AND REPLACE the existing .icon-lightstep block */
+
+.icon-lightstep {
+  width:           120px;
+  height:          120px;
+  background:      var(--app-dark);
+  border-radius:   26px;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  position:        relative;
+  z-index:         2;
+  box-shadow:      0 20px 60px rgba(0,0,0,.5);
+  overflow:        hidden;        /* clips image to rounded shape */
+  padding:         0;             /* remove old text padding */
+}
+
+.icon-lightstep img {
+  width:        80px;
+  height:       80px;
+  object-fit:   contain;          /* preserves aspect ratio */
+  display:      block;
+  border-radius: 0;              /* image stays square inside rounded box */
+  transition:   transform .4s ease;
+}
+
+.icon-lightstep:hover img {
+  transform: scale(1.08);        /* subtle zoom on hover */
+}
+
+/* ── BRAND ── */
+.brand {
+  background: var(--c-forest);
+  text-align: center;
+}
+
+.brand h2 {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  font-size:   clamp(40px, 6vw, 80px);
+  line-height: 1.1;
+  max-width:   1000px;
+  margin:      20px auto 40px;
+  font-weight: 400;
+}
+
+.brand h2 .highlight { color: var(--c-peach); }
+
+.brand p {
+  max-width:   800px;
+  margin:      0 auto;
+  font-size:   16px;
+  line-height: 1.8;
+  opacity:     .85;
+}
+
+/* ── OUTCOME ── */
+.outcome {
+  background: var(--c-peach);
+  color:      var(--c-brown);
+  text-align: center;
+  padding:    160px 40px;
+}
+
+.outcome h2 {
+  font-family: 'Bebas Neue';
+  font-size:   clamp(60px, 10vw, 160px);
+  line-height: .9;
+  margin-bottom: 30px;
+}
+
+.outcome h2 em {
+  font-family: 'Playfair Display';
+  font-style:  italic;
+  font-weight: 400;
+}
+
+.outcome p {
+  max-width:   700px;
+  margin:      0 auto;
+  font-size:   16px;
+  line-height: 1.7;
+}
